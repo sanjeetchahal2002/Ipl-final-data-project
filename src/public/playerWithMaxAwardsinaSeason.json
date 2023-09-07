@@ -1,0 +1,66 @@
+{
+  "2008": {
+    "maxPlayerWithAwards": [
+      "SE Marsh"
+    ],
+    "maxAwards": 5
+  },
+  "2009": {
+    "maxPlayerWithAwards": [
+      "YK Pathan"
+    ],
+    "maxAwards": 3
+  },
+  "2010": {
+    "maxPlayerWithAwards": [
+      "SR Tendulkar"
+    ],
+    "maxAwards": 4
+  },
+  "2011": {
+    "maxPlayerWithAwards": [
+      "CH Gayle"
+    ],
+    "maxAwards": 6
+  },
+  "2012": {
+    "maxPlayerWithAwards": [
+      "CH Gayle"
+    ],
+    "maxAwards": 5
+  },
+  "2013": {
+    "maxPlayerWithAwards": [
+      "MEK Hussey"
+    ],
+    "maxAwards": 5
+  },
+  "2014": {
+    "maxPlayerWithAwards": [
+      "GJ Maxwell"
+    ],
+    "maxAwards": 4
+  },
+  "2015": {
+    "maxPlayerWithAwards": [
+      "DA Warner"
+    ],
+    "maxAwards": 4
+  },
+  "2016": {
+    "maxPlayerWithAwards": [
+      "V Kohli"
+    ],
+    "maxAwards": 5
+  },
+  "2017": [
+    {
+      "player": "BA Stokes",
+      "maxAwards": 3
+    },
+    {
+      "player": "NM Coulter-Nile",
+      "maxAwards": 3
+    }
+  ]
+}
