@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3b82f6">
+    <link rel="stylesheet" href="style.css">
+    <title>IPL Visualization</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: black;text-align: center;font-size: 60px;text-shadow: grey 2px 3px;;">IPL Visualization</h1>
+        <div class="container">
+            <div class="button-grid">
+            <button onclick="fetchAndPlotMatchesPerYear()" class="button class2">Matches Per Year</button>
+            
+            <button onclick="matchesWonPerTeamPerYear()" class="button">Matches Won Per Team Per Year
+                <select name="cars" id= "hello" class="button2">
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>    
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    
+                </select>
+            </button>
+            <button onclick="ExtraRunsPerTeam()" class="button class2">Extra Runs </button>
+            <button onclick="topTenEconomicalBowler()" class="button class2">Top Ten Economical Bowler </button>
+            <button onclick="wonTossWonMatch()" class="button class2">Won Toss Won Match </button>
+            <button onclick="playeroftheMatchawardsforeachseason()"class="button">Player of the Match awards for each season
+                <select name="cars" id= "pMes" class="button2">
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>    
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    
+                </select>
+            </button>
+            <button onclick="strikeRateOfABatsmanForEachSeason()"class="button">strike rate of a batsman for each season 
+                <select name="cars" id= "sRBS" class="button2">
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>    
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>   
+                </select>
+            </button>
+            <button onclick="playerDismissedAnotherPlayer()"class="button class2">Player Dismissed Another Player </button>
+            <button onclick="bestEconomyInSuperOver()"class="button class2">Best Economy In Super Over  </button>    
+            </div>
+        </div>
+        
+        
+        <div id="chart-1"></div>
+    </div>
+    
+    <script src = './main.js'></script>
+</body>
+
+</html>

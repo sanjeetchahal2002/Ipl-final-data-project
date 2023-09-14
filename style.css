@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Global styles */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main heading */
+.main-heading {
+  color: black;
+  text-align: center;
+  font-size: 60px;
+  text-shadow: grey 2px 3px;
+}
+
+/* Container styles */
+.container {
+  text-align: center;
+}
+
+/* Button styles */
+.button  {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 24px; /* Set the same padding for all buttons */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 20px;
+}
+.class2 {
+  padding: 35px 49px;
+  margin : 30px
+}
+.button2 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px; /* Set the same padding for all buttons */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 10px;
+  background-color: white;
+  color: black;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Add any additional CSS styles for your buttons and elements here */
+.button-grid {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    justify-content: center;
+    align-items: center;
+}
