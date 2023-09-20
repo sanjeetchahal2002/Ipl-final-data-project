@@ -251,14 +251,39 @@ async function wonTossWonMatch() {
 async function  matchesWonPerTeamPerYear(year) {
     const response = await fetch('output/matchesWonPerTeamPerYear.json');
     const data = await response.json();
-    // console.log(data);
-        const teams = Object.keys(data[year])
+    let teams = {}
+        let yearsarr=Object.keys(data)
+        for(let year in data){
+            for(let tName in data[year]){
+                if(!teams[tName] && tName != ""){
+                    teams[tName] = 0
+                }
+            }
+        }
+        teams = Object.keys(teams)
+        let yearWiseMatches = []
+        let i = 0
+        for(let year in data ){
+            let yearArray = []
+               for(let team in teams){
+                if(data[year][teams[team]]){
+                    yearArray.push(data[year][teams[team]]) 
+                }else{
+                    yearArray.push(0) 
+                }
+               }
+               yearWiseMatches.push({
+                   name:yearsarr[i],
+                   data : yearArray
+                })
+                i++ 
+        }
         Highcharts.chart('chart-1', {
             chart: {
                 type: 'column'
             },
             title: {
-                text: `Number of matches per ${year}`
+                text: `Number of matches per Team per year`
             },
             subtitle: {
                 text: 'Source: IPL Project'
@@ -279,17 +304,15 @@ async function  matchesWonPerTeamPerYear(year) {
                     borderWidth: 0
                 }
             },
-            series: [{
-                name: 'Matches',
-                data: Object.values(data[year])
-            }
-            ]
+            series: yearWiseMatches
         });
 }
 
+
+
 let selectElementForty = document.getElementById("hello");
 selectElementForty.addEventListener("change", function() {
-    console.log(selectElementForty.value)
+    // console.log(selectElementForty.value)
     matchesWonPerTeamPerYear(selectElementForty.value)
 });
 
